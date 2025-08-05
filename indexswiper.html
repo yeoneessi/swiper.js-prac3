@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>swiper.js 연습</title>
+
+    <!-- Swiper js -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+
+    <!-- AOS -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <link rel="stylesheet" href="css/style-swiper.css">
+    <link rel="stylesheet" href="css/reset.css">
+
+    <style>
+        .fadein2{
+    font-size: 42px;
+    font-weight: 700;
+    color: #343b46;
+    /* margin: auto; */
+    text-align: center;
+    z-index: 999;
+}
+.fadein2 p{
+    font-size: 20px;
+    font-weight: 500;
+    color: #8f9caf;
+    letter-spacing: -0.4px;
+}
+    </style>
+
+</head>
+<body>
+    
+
+        <!-- Slider main container -->
+    <div class="swiper">
+    <!-- Additional required wrapper -->
+    <div class="swiper-wrapper">
+        <!-- Slides -->
+        <div class="swiper-slide">
+            <a href="#">
+                <div class="text-wrap">
+                    <h2>얘들아 안녕</h2>
+                    <p>나는 고양이야</p>
+                </div>
+                <img src="images/swiper-01.webp" alt="이미지">
+            </a>
+        </div>
+        <div class="swiper-slide">
+            <a href="#">
+                <div class="text-wrap">
+                    <h2>얘들아 안녕</h2>
+                    <p>나는 토끼야</p>
+                </div>
+                <img src="images/swiper-02.webp" alt="이미지">
+            </a>
+        </div>
+        <div class="swiper-slide">Slide 3</div>
+        ...
+    </div>
+    <!-- If we need pagination -->
+    <div class="swiper-pagination"></div>
+
+    <!-- If we need navigation buttons -->
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div>
+
+    <!-- If we need scrollbar -->
+    <!-- <div class="swiper-scrollbar"></div>
+    </div> -->
+
+
+    <script src="js/custom-swiper.js"></script>
+</body>
+</html>
